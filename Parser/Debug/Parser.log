@@ -1,0 +1,17 @@
+﻿  Parser.cpp
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(69,10): warning C4930: 'std::string value(void)': prototyped function not called (was a variable definition intended?)
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(67,10): warning C4930: 'std::string kind(void)': prototyped function not called (was a variable definition intended?)
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(71,10): warning C4930: 'std::string position(void)': prototyped function not called (was a variable definition intended?)
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(97,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(102,13): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(108,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(137,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(165,32): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(168,12): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(264,14): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(331,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(345,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(387,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(390,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Kobe\Documents\GitHub\Parser\Parser\LexicalAnalyzer.h(408,22): warning C4018: '<': signed/unsigned mismatch
+  Parser.vcxproj -> C:\Users\Kobe\Documents\GitHub\Parser\Debug\Parser.exe

@@ -1,0 +1,5 @@
+// This is not a good program, just a list of tokens for testing the scanner:
+program Name :
+  a := 7 = b or 7 != b and 77 =< c or 777 >= d and not 7777 > e;
+  bol int if then else fi while do od print print1 false true
+end

@@ -1,0 +1,97 @@
+(SEQ euclid.txt:4:4:
+  (SEQ euclid.txt:3:12:
+    (DECL euclid.txt:3:8:
+      a  int
+    )
+    (DECL euclid.txt:3:16:
+      b  int
+    )
+  )
+  (SEQ euclid.txt:4:11:
+    (ASSIGNMENT euclid.txt:4:6:
+      (VARIABLE euclid.txt:4:4:
+        a  0
+      )
+      (INT_LITERAL euclid.txt:4:9:
+        15
+      )
+    )
+    (SEQ euclid.txt:5:11:
+      (ASSIGNMENT euclid.txt:5:6:
+        (VARIABLE euclid.txt:5:4:
+          b  1
+        )
+        (INT_LITERAL euclid.txt:5:9:
+          20
+        )
+      )
+      (SEQ euclid.txt:6:11:
+        (PRINT_INT euclid.txt:6:4:
+          (VARIABLE euclid.txt:6:10:
+            a  0
+          )
+        )
+        (SEQ euclid.txt:6:21:
+          (PRINT_INT euclid.txt:6:14:
+            (VARIABLE euclid.txt:6:20:
+              b  1
+            )
+          )
+          (SEQ euclid.txt:11:6:
+            (WHILE euclid.txt:7:4:
+              (OP_NE euclid.txt:7:12:
+                (VARIABLE euclid.txt:7:10:
+                  a  0
+                )
+                (VARIABLE euclid.txt:7:15:
+                  b  1
+                )
+              )
+              (IF euclid.txt:8:7:
+                (OP_LT euclid.txt:8:12:
+                  (VARIABLE euclid.txt:8:10:
+                    a  0
+                  )
+                  (VARIABLE euclid.txt:8:14:
+                    b  1
+                  )
+                )
+                (ASSIGNMENT euclid.txt:8:23:
+                  (VARIABLE euclid.txt:8:21:
+                    b  1
+                  )
+                  (OP_MINUS euclid.txt:8:28:
+                    (VARIABLE euclid.txt:8:26:
+                      b  1
+                    )
+                    (VARIABLE euclid.txt:8:30:
+                      a  0
+                    )
+                  )
+                )
+                (ASSIGNMENT euclid.txt:9:14:
+                  (VARIABLE euclid.txt:9:12:
+                    a  0
+                  )
+                  (OP_MINUS euclid.txt:9:19:
+                    (VARIABLE euclid.txt:9:17:
+                      a  0
+                    )
+                    (VARIABLE euclid.txt:9:21:
+                      b  1
+                    )
+                  )
+                )
+              )
+            )
+            (PRINT_INT euclid.txt:12:4:
+              (VARIABLE euclid.txt:12:10:
+                a  0
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)

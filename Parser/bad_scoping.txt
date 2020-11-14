@@ -1,0 +1,13 @@
+program bad_scoping:
+   int a;
+   while a = 0 do
+     int b;
+     b := a
+   od;
+   if a = 0 then
+      int c;
+      c := b
+   else
+      a := c
+   fi
+end

@@ -20,6 +20,7 @@ public:
 
 	bool program()
 	{
+		analyze();//Runs the lexical analysis automatically for convenience. Comment this out if you want to run it separately.
 		//cout << i << endl;
 		//cout << tokens[c] << endl;
 		match("program");
@@ -260,7 +261,8 @@ public:
 		{
 			//cout << "ERROR on line " << y << "!" << " Seeing " << tokens[c] << ", expecting " << symbol << endl;
 			cout << "ERROR! Seeing " << tokens[c] << ", expecting " << symbol << endl;
-			cout << c << endl;
+			abort();
+			//cout << c << endl;
 			return false;
 		}
 	}
@@ -293,13 +295,14 @@ public:
 			i++;
 		}
 		cout << endl;
+		abort();
 		return false;
 	}
 
 
 
 //Using an instance of class "LexicalAnalyzer," It scans and outputs all the tokens while keeping count of how many tokens there are. A dynamic array is then declared to fit these tokens.
-//Due to the way "LexicalAnalyzer" is designed and the fact that it's impossible to know how many tokens there are before you count, I tell the parser to run its own lexical analysis(it inherits from class "LexicalAnalyzer") so it can go back through
+//Due to the way "LexicalAnalyzer" is designed and the fact that it's impossible to know how many tokens there are before you count, I then run another lexical analysis so it can go back through
 //and store the tokens in this dynamic array. Specifically, it's quite hard to get an instance of "LexicalAnalyzer" to go back to the beginning of a file and reset all the variables. It's not worth the trouble, and you're really
 //not supposed to change the base class anyway. I know of more efficient ways to go about doing this, but it can be confusing and a bit of a mess. This way is simpler.
 	void analyze()
@@ -319,14 +322,14 @@ public:
 
 		int i = 0;
 
-		//LexicalAnalyzer store(filename);
-		next();
+		LexicalAnalyzer store(filename);
+		store.next();
 		this->tokens = new string[count];
-		while (kind() != "end-of-state")
+		while (store.kind() != "end-of-state")
 		{
-			next();
+			store.next();
 			//cout << "hi" << endl;
-			this->tokens[i] = kind();
+			this->tokens[i] = store.kind();
 			i++;
 		}
 
